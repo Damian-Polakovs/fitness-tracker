@@ -1,0 +1,38 @@
+<div class="workout">
+    <h1>Log New Workout</h1>
+    <form>
+      <mat-form-field appearance="fill">
+        <mat-label>Exercise</mat-label>
+        <input matInput placeholder="Enter exercise">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Duration (minutes)</mat-label>
+        <input matInput type="number" placeholder="Enter duration">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Intensity</mat-label>
+        <mat-select>
+          <mat-option value="low">Low</mat-option>
+          <mat-option value="medium">Medium</mat-option>
+          <mat-option value="high">High</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Notes</mat-label>
+        <textarea matInput placeholder="Enter notes"></textarea>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Date</mat-label>
+        <input matInput [matDatepicker]="picker" placeholder="Select date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary">Log Workout</button>
+    </form>
+  </div>
+  

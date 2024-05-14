@@ -1,0 +1,23 @@
+<div class="progress">
+    <h1>Progress</h1>
+    
+    <div class="progress-charts">
+      <h2>Progress Charts</h2>
+      <ngx-chartjs [type]="'bar'" [data]="chartData" [options]="chartOptions"></ngx-chartjs>
+
+      <p>This section will display graphs or charts showing trends in workout frequency, intensity, duration, and progress towards goals.</p>
+    </div>
+  
+    <div class="filters">
+      <h2>Filters</h2>
+      <mat-form-field appearance="fill">
+        <mat-label>Time Period</mat-label>
+        <mat-select>
+          <mat-option value="weekly">Weekly</mat-option>
+          <mat-option value="monthly">Monthly</mat-option>
+          <mat-option value="yearly">Yearly</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  
