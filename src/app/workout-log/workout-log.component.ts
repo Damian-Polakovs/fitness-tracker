@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { WorkoutService } from '../workout/workout.service'; 
-
 @Component({
   selector: 'app-workout-log',
   templateUrl: './workout-log.component.html',

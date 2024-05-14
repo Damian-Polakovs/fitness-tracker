@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-progress-tracking',
   templateUrl: './progress-tracking.component.html',

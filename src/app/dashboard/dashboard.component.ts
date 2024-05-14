@@ -1,13 +1,20 @@
-import { Component } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+// dashboard.component.ts
+import { Component, OnInit } from '@angular/core';
+import { WorkoutService } from '../workout/workout.service';
 
 @Component({
   selector: 'app-dashboard',
-  standalone: true,
-  imports: [RouterModule],
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent {
-  constructor(){}
+export class DashboardComponent implements OnInit {
+
+  constructor(public workoutService: WorkoutService) { }
+
+  ngOnInit(): void {
+    // Dummy data for testing
+    this.workoutService.logWorkout('Running');
+    this.workoutService.logWorkout('Cycling');
+    this.workoutService.logWorkout('Swimming');
+  }
 }
