@@ -1,13 +1,33 @@
 <!-- dashboard.component.html -->
-<app-header></app-header>
+<div class="dashboard-container">
 
-<h1>Welcome to Fitness Tracker</h1>
-<div>
-  <app-workout-log></app-workout-log>
-  <app-goal-setting></app-goal-setting>
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1 class="welcome-heading">Welcome to Fitness Tracker</h1>
+
+    <!-- Sections -->
+    <div class="sections-container">
+      <!-- Workout Log -->
+      <div class="section">
+        <h2 class="section-heading">Workout Log</h2>
+        <app-workout-log></app-workout-log>
+      </div>
+
+      <!-- Goal Setting -->
+      <div class="section">
+        <h2 class="section-heading">Goal Setting</h2>
+        <app-goal-setting></app-goal-setting>
+      </div>
+    </div>
+
+    <!-- Progress Tracking -->
+    <div class="section">
+      <h2 class="section-heading">Progress Tracking</h2>
+      <app-progress-tracking></app-progress-tracking>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <app-footer></app-footer>
+
 </div>
-<app-progress-tracking></app-progress-tracking>
-
-<app-footer></app-footer>
-
-  

@@ -1,38 +1,36 @@
 <div class="workout">
-    <h1>Log New Workout</h1>
-    <form>
-      <mat-form-field appearance="fill">
-        <mat-label>Exercise</mat-label>
-        <input matInput placeholder="Enter exercise">
-      </mat-form-field>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>Duration (minutes)</mat-label>
-        <input matInput type="number" placeholder="Enter duration">
-      </mat-form-field>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>Intensity</mat-label>
-        <mat-select>
-          <mat-option value="low">Low</mat-option>
-          <mat-option value="medium">Medium</mat-option>
-          <mat-option value="high">High</mat-option>
-        </mat-select>
-      </mat-form-field>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>Notes</mat-label>
-        <textarea matInput placeholder="Enter notes"></textarea>
-      </mat-form-field>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>Date</mat-label>
-        <input matInput [matDatepicker]="picker" placeholder="Select date">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
-  
-      <button mat-raised-button color="primary">Log Workout</button>
-    </form>
-  </div>
-  
+  <h1>Log New Workout</h1>
+  <form>
+    <div class="form-field" appearance="fill">
+      <label>Exercise</label>
+      <input class="input" placeholder="Enter exercise">
+    </div>
+
+    <div class="form-field" appearance="fill">
+      <label>Duration (minutes)</label>
+      <input class="input" type="number" placeholder="Enter duration">
+    </div>
+
+    <div class="form-field" appearance="fill">
+      <label>Intensity</label>
+      <select class="select">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    </div>
+
+    <div class="form-field" appearance="fill">
+      <label>Notes</label>
+      <textarea class="input" placeholder="Enter notes"></textarea>
+    </div>
+
+    <div class="form-field" appearance="fill">
+      <label>Date</label>
+      <input class="input" #picker placeholder="Select date">
+      <button class="datepicker-toggle" (click)="picker.focus()">Select Date</button>
+    </div>
+
+    <button class="button" color="primary">Log Workout</button>
+  </form>
+</div>

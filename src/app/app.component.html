@@ -1,20 +1,3 @@
-<!DOCTYPE html>
 <app-header></app-header>
-
-<div *ngIf="currentRoute === 'dashboard'">
-  <app-dashboard></app-dashboard>
-</div>
-
-<div *ngIf="currentRoute === 'workouts'">
-  <app-workout-log></app-workout-log>
-</div>
-
-<div *ngIf="currentRoute === 'goals'">
-  <app-goal-setting></app-goal-setting>
-</div>
-
-<div *ngIf="currentRoute === 'progress'">
-  <app-progress-tracking></app-progress-tracking>
-</div>
-
+<router-outlet></router-outlet>
 <app-footer></app-footer>

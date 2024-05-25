@@ -1,0 +1,45 @@
+.progress {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .progress h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .progress-charts {
+    margin-bottom: 20px;
+  }
+  
+  .progress-charts h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .filters h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .filters .form-field {
+    margin-bottom: 15px;
+  }
+  
+  .filters label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .filters select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
